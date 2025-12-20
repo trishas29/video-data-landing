@@ -2,58 +2,279 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Get Paid for Your Daily Videos</title>
+  <title>Record Your Day</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #0f172a;
+      --muted: #475569;
+      --card: #ffffff;
+      --primary: #000000;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9fafb;
-      color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
-    h1 {
-      font-size: 40px;
+
+    /* ---------- HEADER ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
     }
-    .button {
-      display: inline-block;
-      padding: 14px 24px;
-      background: black;
-      color: white;
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.5px;
+    }
+
+    .header-btn {
       text-decoration: none;
+      padding: 10px 16px;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      margin-top: 20px;
+      color: var(--text);
+      font-size: 14px;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
+
+    /* ---------- HERO ---------- */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 14px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .video-card {
+      background: var(--card);
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      margin-bottom: 80px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      letter-spacing: -0.5px;
+    }
+
+    /* ---------- HOW IT WORKS ---------- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .step h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* ---------- TRUST ---------- */
+    .trust {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .trust ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .trust li {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    /* ---------- FINAL CTA ---------- */
+    .final-cta {
+      text-align: center;
+      background: var(--card);
+      padding: 60px 20px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .final-cta h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .final-cta p {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Turn Your Daily Videos Into Income</h1>
-    <p>
-      Upload short, private videos of your day.  
-      We anonymize the data and companies pay for insights — you get paid.
-    </p>
 
-    <a class="button" href="#">Upload Your First Video</a>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">RecordYourDay</div>
+      <a href="#" class="header-btn">Sign Up</a>
+    </header>
 
-    <div class="card">
-      <h2>How It Works</h2>
-      <ol>
-        <li>Record short daily videos</li>
-        <li>Upload</li>
-        <li>You get paid when it’s used</li>
-      </ol>
+    <!-- HERO -->
+    <div class="hero">
+      <div>
+        <h1>Get paid to record your day</h1>
+        <p>
+          Record short, private videos of your daily life.
+          We responsibly transform real-world experiences into insights —
+          and you earn for contributing.
+        </p>
+        <a href="#" class="cta">Create an account</a>
+      </div>
+
+      <div class="video-card">
+        <!-- VIDEO PLACEHOLDER -->
+        <video controls width="100%" poster="https://via.placeholder.com/480x270.png?text=Video+Placeholder">
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
+
+    <!-- HOW IT WORKS -->
+    <section>
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Record</h3>
+          <p>Capture short videos using your phone — whenever it fits your day.</p>
+        </div>
+        <div class="step">
+          <h3>2. Upload</h3>
+          <p>Upload securely through our platform in just a few taps.</p>
+        </div>
+        <div class="step">
+          <h3>3. Protect</h3>
+          <p>We anonymize and process videos before any data is used.</p>
+        </div>
+        <div class="step">
+          <h3>4. Earn</h3>
+          <p>You get paid when your data contributes to real insights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY / TRUST -->
+    <section class="trust">
+      <h2 class="section-title">Built on trust</h2>
+      <ul>
+        <li>✔ You choose what you upload</li>
+        <li>✔ Videos are never public</li>
+        <li>✔ Data is anonymized before use</li>
+        <li>✔ You can stop or delete data anytime</li>
+      </ul>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2>Start recording with confidence</h2>
+      <p>
+        Join a growing community helping companies understand the real world —
+        while staying in control of your data.
+      </p>
+      <a href="#" class="cta">Sign up to get started</a>
+    </section>
+
+    <footer>
+      © 2025 RecordYourDay. All rights reserved.
+    </footer>
+
   </div>
 </body>
 </html>
