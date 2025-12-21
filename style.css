@@ -163,11 +163,10 @@ body {
 }
 
 .video-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+.video-wrapper {
+  background: #000;
+}
+
 }
 
 .video-wrapper video {
@@ -190,23 +189,29 @@ body {
 
 /* ---------- Footer-----------*/
 .footer {
-  background: #0f172a;
-  color: #cbd5f5;
-  padding: 40px 0;
-  margin-top: 80px;
+  padding: 60px 0 40px;
+  margin-top: 100px;
+  border-top: 1px solid #e5e7eb;
+  background: transparent;
 }
 
-.footer-content {
+.footer-inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .footer-logo {
-  height: 40px;
-  opacity: 0.9;
+  height: 44px;
+  opacity: 0.85;
 }
+
+.footer-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
 
 
 
