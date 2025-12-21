@@ -101,10 +101,9 @@ body {
 
 /* ---------- PEOPLE ---------- */
 .people {
-  max-width: 1200px;
-  margin: auto;
-  padding: 80px 20px;
+  padding: 80px 0;
   text-align: center;
+
 }
 
 .people h2 {
@@ -150,6 +149,18 @@ body {
 .step:hover {
   transform: translateY(-6px);
 }
+
+/* ------ Trust -------*/
+.trust {
+  padding: 80px 0;
+  background: #f1f5f9;
+}
+
+.trust ul {
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
 
 
 /* ---------- RESPONSIVE ---------- */
