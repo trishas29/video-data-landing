@@ -1,1 +1,129 @@
+:root {
+  --primary: #4f46e5;
+  --dark: #0f172a;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --muted: #475569;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 36px;
+}
+
+.header-cta {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.header-cta:hover {
+  background: var(--dark);
+  color: white;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--muted);
+  margin: 20px 0 30px;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 24px;
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- PEOPLE ---------- */
+.people {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.people h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.people-grid img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.people-grid img:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
