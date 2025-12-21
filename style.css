@@ -35,8 +35,10 @@ body {
 
 
 .logo {
-  height: 36px;
+  height: 48px;      /* try 48–56 */
+  cursor: pointer;
 }
+
 
 .header-cta {
   padding: 10px 18px;
@@ -149,6 +151,30 @@ body {
 .step:hover {
   transform: translateY(-6px);
 }
+/* ------ Video --------*/
+.video-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.video-subtext {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
 
 /* ------ Trust -------*/
 .trust {
@@ -159,6 +185,27 @@ body {
 .trust ul {
   margin-top: 24px;
   line-height: 1.8;
+}
+
+
+/* ---------- Footer-----------*/
+.footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  padding: 40px 0;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 40px;
+  opacity: 0.9;
 }
 
 
