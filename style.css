@@ -278,6 +278,26 @@ body {
   color: var(--text-muted);
 }
 
+/* Siding Testimonials */
+.testimonial-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.testimonial {
+  min-width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
 
 
 
