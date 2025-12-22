@@ -8,8 +8,9 @@
 </head>
 
 <body>
-
-  <script>
+<!-- FAQ JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-question').forEach(btn => {
       btn.addEventListener('click', () => {
         const answer = btn.nextElementSibling;
@@ -17,7 +18,9 @@
           answer.style.maxHeight ? null : answer.scrollHeight + "px";
       });
     });
-  </script>
+  });
+</script>
+
 
 
   <div class="container">
@@ -106,28 +109,30 @@
 <!--Testimonials-->
     <section class="testimonials reveal alt">
       <div class="container">
-        <h2>What people are saying</h2>
+        <h2 class="section-title">What contributors are saying</h2>
     
         <div class="testimonial-track">
-          <div class="testimonial">“Super easy way to earn.”</div>
-          <div class="testimonial">“Transparent and reliable.”</div>
-          <div class="testimonial">“I upload daily now.”</div>
-          <div class="testimonial">“Feels like the future.”</div>
-        </div>
-      </div>
-    </section>
-    <section class="team reveal">
-      <div class="container">
-        <h2>Meet the team</h2>
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <p>“Super easy way to earn. Uploading fits into my routine.”</p>
+            <span>— Sarah</span>
+          </div>
     
-        <div class="team-photos">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg">
-          <img src="https://randomuser.me/api/portraits/men/76.jpg">
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <p>“Clear communication and reliable payouts.”</p>
+            <span>— Daniel</span>
+          </div>
+    
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg">
+            <p>“Feels transparent compared to other platforms.”</p>
+            <span>— Aisha</span>
+          </div>
         </div>
       </div>
     </section>
+
 
 
 
