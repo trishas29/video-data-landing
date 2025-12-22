@@ -285,7 +285,17 @@ body {
 .testimonial-track {
   display: flex;
   gap: 20px;
-  overflow: hidden;
+  width: max-content;
+  animation: scrollTestimonials 40s linear infinite;
+}
+
+@keyframes scrollTestimonials {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .testimonial {
