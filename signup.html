@@ -46,5 +46,29 @@
   
     reveals.forEach(el => observer.observe(el));
 </script>
+<script>
+  // Fade in on load
+  window.addEventListener('load', () => {
+    document.body.classList.add('page-loaded');
+  });
+
+  // Fade out on link click
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+
+      // Ignore external links
+      if (!href || href.startsWith('http') || href.startsWith('#')) return;
+
+      e.preventDefault();
+      document.body.classList.remove('page-loaded');
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 300);
+    });
+  });
+</script>
+
 </body>
 </html>
