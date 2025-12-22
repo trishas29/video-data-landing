@@ -267,6 +267,10 @@ body {
 .reveal.visible .stagger > *:nth-child(4) { transition-delay: 0.4s; }
 
 /*FAQS*/
+.faq {
+  padding-bottom: 120px;
+}
+
 .faq-item {
   border-bottom: 1px solid #e5e7eb;
 }
