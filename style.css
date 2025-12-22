@@ -406,6 +406,12 @@ body.page-loaded {
   color: var(--blue-main);
 }
 
+.signup-note {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
