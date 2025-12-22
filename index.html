@@ -9,6 +9,17 @@
 
 <body>
 
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        answer.style.maxHeight =
+          answer.style.maxHeight ? null : answer.scrollHeight + "px";
+      });
+    });
+  </script>
+
+
   <div class="container">
 
     <!-- HEADER -->
@@ -91,6 +102,20 @@
         </div>
       </div>
     </section>
+
+    <section class="testimonials reveal alt">
+      <div class="container">
+        <h2>What people are saying</h2>
+    
+        <div class="testimonial-track">
+          <div class="testimonial">“Super easy way to earn.”</div>
+          <div class="testimonial">“Transparent and reliable.”</div>
+          <div class="testimonial">“I upload daily now.”</div>
+          <div class="testimonial">“Feels like the future.”</div>
+        </div>
+      </div>
+    </section>
+
 
 
 <!-- People / employees section -->
