@@ -224,6 +224,14 @@ body {
   transform: translateY(0);
 }
 
+/* Signup page CSS */
+.secondary-btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  cursor: pointer;
+}
 
 
 
