@@ -255,6 +255,28 @@ body {
 .reveal.visible .stagger > *:nth-child(3) { transition-delay: 0.3s; }
 .reveal.visible .stagger > *:nth-child(4) { transition-delay: 0.4s; }
 
+/*FAQS*/
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: var(--text-muted);
+}
 
 
 
