@@ -1,10 +1,11 @@
 :root {
-  --primary: #4f46e5;
-  --dark: #0f172a;
-  --bg: #f8fafc;
-  --card: #ffffff;
-  --muted: #475569;
+  --blue-main: #2563eb;      /* professional blue */
+  --blue-light: #eff6ff;    /* background tint */
+  --blue-dark: #1e40af;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
 }
+
 
 * {
   box-sizing: border-box;
@@ -14,7 +15,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
   background: var(--bg);
-  color: var(--dark);
+  color: var(--text-dark);
 }
 
 /* ---------- HEADER ---------- */
@@ -50,7 +51,7 @@ body {
 }
 
 .header-cta:hover {
-  background: var(--dark);
+  background: var(--blue-light);
   color: white;
 }
 
@@ -77,7 +78,7 @@ body {
 }
 
 .primary-btn {
-  background: var(--primary);
+  background: var(--blue-main);
   color: white;
   padding: 14px 28px;
   border-radius: 999px;
@@ -87,6 +88,7 @@ body {
 }
 
 .primary-btn:hover {
+  background: var(--blue-dark);
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
 }
