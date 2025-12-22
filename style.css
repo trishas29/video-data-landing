@@ -233,22 +233,26 @@ body {
   cursor: pointer;
 }
 
+/*Stagger for how it works */
+
 .stagger > * {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease;
 }
 
-.stagger.visible > * {
+/* When the parent section becomes visible */
+.reveal.visible .stagger > * {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Delay each child */
-.stagger.visible > *:nth-child(1) { transition-delay: 0.1s; }
-.stagger.visible > *:nth-child(2) { transition-delay: 0.2s; }
-.stagger.visible > *:nth-child(3) { transition-delay: 0.3s; }
-.stagger.visible > *:nth-child(4) { transition-delay: 0.4s; }
+/* Stagger delays */
+.reveal.visible .stagger > *:nth-child(1) { transition-delay: 0.1s; }
+.reveal.visible .stagger > *:nth-child(2) { transition-delay: 0.2s; }
+.reveal.visible .stagger > *:nth-child(3) { transition-delay: 0.3s; }
+.reveal.visible .stagger > *:nth-child(4) { transition-delay: 0.4s; }
+
 
 
 
