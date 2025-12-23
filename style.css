@@ -412,6 +412,13 @@ body.page-loaded {
   font-size: 0.95rem;
 }
 
+.logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
