@@ -424,6 +424,47 @@ body.page-loaded {
 }
 
 
+.step-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.benefits {
+  padding: 100px 0;
+}
+
+.benefit-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.benefit-card {
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+}
+
+.blue-bg {
+  background: rgba(37, 99, 235, 0.08); /* subtle blue */
+}
+
+.light-bg {
+  background: white;
+}
+
+
+
+
+
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
